@@ -1,0 +1,1 @@
+Model Tesla, Year of admission 2020, Car price 45700$
