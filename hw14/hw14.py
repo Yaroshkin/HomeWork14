@@ -51,7 +51,7 @@ price_book = input("Enter price book: ")
 
 book1 = Book(book,year_book,edition_book,genre_book,author_book,price_book)
 with open("output.txt", "a") as f:
-    f.write(f"Name book {book}, Author book {author_book}, Price this book {price_book}")
+    f.write(f"Name book {book}, Author book {author_book}, Price this book {price_book}\n")
 
 # Задание 3
 # Реализуйте класс «Стадион». Необходимо хранить в 
@@ -59,3 +59,22 @@ with open("output.txt", "a") as f:
 # город, вместимость. Реализуйте методы класса для ввода 
 # данных, вывода данных, реализуйте доступ к отдельным 
 # полям через методы класса.Домашнее задание
+
+
+class Stadion:
+    def __init__(self, name_stadion, date_open, country, city, capacity):
+        self.name_stadion = name_stadion
+        self.date_open = date_open
+        self.country = country
+        self.city = city
+        self.capacity = capacity
+
+name = input("Enter name stadion: ")
+date = input("Enter date open: ")
+country = input("Enter country: ")
+city = input("Enter city: ")
+capacity = input("Enter capacity: ")
+
+stadion1 = Stadion(name,date,country,city,capacity)
+with open("output.txt", "a") as f:
+    f.write(f"Name stadion {name}, Country {country}, City {city}, Capacity {capacity}")
