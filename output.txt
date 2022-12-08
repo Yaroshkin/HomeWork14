@@ -1,1 +1,2 @@
 Model Tesla, Year of admission 2020, Car price 45700$
+Name book Dictionary, Author book Slon, Price this book 10 гривен

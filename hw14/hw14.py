@@ -14,8 +14,8 @@ class Car:
         self.color_car = color_car
         self.price = price
 
-enter_name = input("Enter name: ")
-enter_year = input("Year: ")
+enter_name = input("Enter name car: ")
+enter_year = input("Year car: ")
 enter_made = input("Made in: ")
 enter_engine = input("Engine motor: ")
 enter_color = input("Color car: ")
@@ -23,7 +23,7 @@ enter_price = input("Price: ")
 
 car1 = Car(enter_name,enter_year,enter_made,enter_engine,enter_color,enter_price)
 with open("output.txt",'w') as f:
-    f.write(f"Model {car1.name_model}, Year of admission {car1.year}, Car price {car1.price}")
+    f.write(f"Model {car1.name_model}, Year of admission {car1.year}, Car price {car1.price}\n")
 
 
 # Задание 2
@@ -41,8 +41,17 @@ class Book:
         self.genre = genre
         self.author = author
         self.price = price
-        
 
+book = input("Enter name book: ")
+year_book = input("Enter year book: ")
+edition_book = input("Enter edition: ")
+genre_book = input("Enter genre: ")
+author_book = input("Enter Autothor book: ")
+price_book = input("Enter price book: ")
+
+book1 = Book(book,year_book,edition_book,genre_book,author_book,price_book)
+with open("output.txt", "a") as f:
+    f.write(f"Name book {book}, Author book {author_book}, Price this book {price_book}")
 
 # Задание 3
 # Реализуйте класс «Стадион». Необходимо хранить в 
