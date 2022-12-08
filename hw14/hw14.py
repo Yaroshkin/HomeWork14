@@ -22,7 +22,7 @@ enter_color = input("Color car: ")
 enter_price = input("Price: ")
 
 car1 = Car(enter_name,enter_year,enter_made,enter_engine,enter_color,enter_price)
-with open("output.txt",'w') as f:
+with open(r"hw14\output.txt",'w') as f:
     f.write(f"Model {car1.name_model}, Year of admission {car1.year}, Car price {car1.price}\n")
 
 
@@ -50,7 +50,7 @@ author_book = input("Enter Autothor book: ")
 price_book = input("Enter price book: ")
 
 book1 = Book(book,year_book,edition_book,genre_book,author_book,price_book)
-with open("output.txt", "a") as f:
+with open(r"hw14\output.txt", "a") as f:
     f.write(f"Name book {book}, Author book {author_book}, Price this book {price_book}\n")
 
 # Задание 3
@@ -76,5 +76,5 @@ city = input("Enter city: ")
 capacity = input("Enter capacity: ")
 
 stadion1 = Stadion(name,date,country,city,capacity)
-with open("output.txt", "a") as f:
+with open(r"hw14\output.txt", "a") as f:
     f.write(f"Name stadion {name}, Country {country}, City {city}, Capacity {capacity}")
